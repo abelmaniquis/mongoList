@@ -1,0 +1,1 @@
+script.js and style.css were originally inline html.
