@@ -1,3 +1,8 @@
+/*
+Contains logic for mapping endpoints to service calls. This
+separates HTTP logic from the model logic.
+*/
+
 var express = require('express');
 var Item = require('../services/item');
 var router = express.Router();
@@ -30,11 +35,13 @@ router.put('/items',function(req,res){
 });
 
 router.delete('/items',function(req,res){
-    Item.delete(req.body.name,function(err,item){
+    Item.delete(req.body.name,function(err,items){
         if (err){
             return res.status(400).json(err);
         }
-        res.json(item);
+        var i = res.id
+        items.splice(items[i],1);
+        res.json(items);
     })    
 });
 

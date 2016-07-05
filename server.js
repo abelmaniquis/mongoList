@@ -13,7 +13,7 @@ app.use('*', function(req, res) {
 });
 
 app.listen(8080, function() {
-    console.log('Listening on port 8080');
+    console.log('Listening on port 8080'); //Port 8080 is typically used for a personally run web server.
 });
 
 exports.app = app;
