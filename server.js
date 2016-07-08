@@ -9,7 +9,7 @@ app.use(express.static('public'));
 
 app.use('/', itemRoutes);
 app.use('*', function(req, res) {
-    res.status(404).json({ message: 'Not Found' });
+    res.status(404).json({ message: 'Not Found!!!!!!' });
 });
 
 app.listen(8080, function() {

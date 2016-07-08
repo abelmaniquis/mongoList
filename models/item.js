@@ -1,3 +1,5 @@
+/*This is a blueprint of the item*/
+
 var mongoose = require('mongoose');
 
 var ItemSchema = new mongoose.Schema({

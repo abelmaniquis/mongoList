@@ -1,5 +1,5 @@
 var Item = require('../models/item');
-
+/*Seed usually denotes some kind of dummy data*/
 exports.run = function(callback){
   Item.create({name: 'Broad Beans'},
               {name:'Tomatoes'},
